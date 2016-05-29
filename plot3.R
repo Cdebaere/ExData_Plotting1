@@ -12,7 +12,7 @@ consumption_filtered <- subset(consumption, Date >= "2007-02-01" & Date <= "2007
 datetime <- paste(consumption_filtered$Date, consumption_filtered$Time)
 consumption_filtered$Datetime <- strptime(datetime, format="%Y-%m-%d %H:%M:%S")
 
-#construct Plot2
+#construct Plot3
 with(consumption_filtered, {
      plot(x=Datetime, 
           y=Sub_metering_1,
